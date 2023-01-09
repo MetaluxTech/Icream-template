@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Ice cream Website</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+     <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- button -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+
+        <a href="#" class="logo" id="logophone"> <iconify-icon icon="bi:cart-plus" style="color: #d85285;" width="25px"></iconify-icon><i class="fas fa-ice-cream"style="color: rgb(216, 82, 133);"></i> آيس كريم </a>
+        <button id="btn">
+            <iconify-icon icon="line-md:facebook" style="color: rgb(216, 82, 133);" width="36"></iconify-icon>
+        </button>
+        <button id="btn">
+        <iconify-icon icon="line-md:instagram" style="color: rgb(216, 82, 133);" width="36"></iconify-icon>
+        </button>
+        <button id="btn">
+            <iconify-icon icon="bi:cart-plus" style="color: #d85285;" width="36"></iconify-icon>
+        </button>
+
+        <nav class="navbar">
+            <a href="#home">الصفحة الرئيسية</a>
+            <a href="#about">حول</a>
+            <a href="#menu">منتجاتنا</a>
+            <a href="#gallery">معرض الصور </a>
+            <a href="#order">حجز طاولة  </a>
+            <a href="#contact"> تواصل معنا  </a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <nav class="menun" id="navn">
+
+            <input href="#home" type="radio" name="nav-item" id="m-home" checked><label for="m-home"><a href="#home">الصفحة الرئيسية</label></a>
+            <input href="#about" type="radio" name="nav-item" id="m-search"><label for="m-search"> <a href="#about">حول</label></a>
+            <input type="radio" name="nav-item" id="m-notification"><label for="m-notification">  <a href="#menu"> منتجاتنا </label></a>
+            <a href="#" class="logo" style="padding-bottom: 20px;color: rgb(216, 82, 133)"> <i class="fas fa-ice-cream"style="color: rgb(216, 82, 133);"></i> آيس كريم </a>
+            <input type="radio" name="nav-item" id="m-favorites"><label for="m-favorites"> <a href="#gallery">معرض الصور</label></a>
+            <input type="radio" name="nav-item" id="m-profile"><label for="m-profile"> <a href="#order"> حجز طاولة </label></a>
+            <input type="radio" name="nav-item" id="m-contact"><label for="m-contact"> <a href="#contact">تواصل معنا  </label></a>
+            <div class="selector"></div>
+        </nav>  
+        
+
+    </section>
+<!-- header -->
+    <!-- home section -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(images/pic1.jpg) no-repeat; width: 100%;">
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/pic3.jpg) no-repeat;width: 100%;">
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </section>
+
+    <!-- home section -->
+
+    <!-- about us -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">  آيس كريم تقليدي ولذيذ منذ عام 1950  </h1>
+
+        <div class="row">
+
+            <div class="box">
+                <div class="description">
+                    <h5>من نحن</h5>
+                    <p>  آيس كريم تقليدي ولذيذ  آيس كريم تقليدي ولذيذ  آيس كريم تقليدي ولذيذ  آيس كريم تقليدي ولذيذ  آيس كريم تقليدي ولذيذ  </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="description">
+            <img  src="images/pic4.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="description">
+                    <h5>ميزاتنا</h5>
+                    <p>  آيس كريم تقليدي ولذيذ  آيس كريم تقليدي ولذيذ  آيس كريم تقليدي ولذيذ  آيس كريم تقليدي ولذيذ  آيس كريم تقليدي ولذيذ  </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about us -->
+
+    <!-- menu -->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading">منتجاتنا</h1>
+        <header>
+        <div class="row">
+            <div class="col-sm-12 filter-group-wrapper">
+              <div class="filter-group">
+                  <button class="filter-button" id="all-meals">الكل</button>
+                  <button class="filter-button" id="breakfast">آيس كريم</button>
+                  <button class="filter-button" id="lunch">مشروبات ساخنة</button>
+                  <button class="filter-button" id="shakes">ميلك شيك</button>
+              </div>
+            </div>
+          </div>
+        </header>
+     <!-- section menu start -->
+        <!-- container of menu-card, image-menu, text-image-menu, button start -->
+        <div class="menu-box">
+          <!-- parent of image-menu, text-image-menu, & button start  -->
+          <div class="menu-card">
+            <!-- image-menu start -->
+            <figure class="image-menu">
+              <img src="images/menu-2.png" alt="">
+            </figure>
+            <!-- image-menu end -->
+            <!-- text-image-menu start -->
+            <figcaption class="text-image-menu">
+                <h3>آيس كريم</h3>
+                <input class="plus" type="number" placeholder="  "> <iconify-icon icon="ic:twotone-plus-minus" style="color: #d85285;" width="20"></iconify-icon>
+              <p>5<span>$</span></p>
+              <button class="button">
+                <span>أضافة</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+                  </figcaption>
+            <!-- text-image-menu end -->
+          </div>
+          <!-- parent of image-menu, text-image-menu, & button end  -->
+              <!-- parent of image-menu, text-image-menu, & button start  -->
+              <div class="menu-card">
+                <!-- image-menu start -->
+                <figure class="image-menu">
+                  <img src="images/menu-3.png" alt="">
+                </figure>
+                <!-- image-menu end -->
+                <!-- text-image-menu start -->
+                <figcaption class="text-image-menu">
+                    <h3>آيس كريم</h3>
+              <input class="plus" type="number" placeholder="  "> <iconify-icon icon="ic:twotone-plus-minus" style="color: #d85285;" width="20"></iconify-icon>
+                  <p>2$ <span>5$</span></p>
+                  <button class="button">
+                    <span>أضافة</span>
+                    <div class="cart">
+                        <svg viewBox="0 0 36 26">
+                            <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                            <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                        </svg>
+                    </div>
+                </button>
+                </figcaption>
+                <!-- text-image-menu end -->
+              </div>
+              <!-- parent of image-menu, text-image-menu, & button end  -->
+                  <!-- parent of image-menu, text-image-menu, & button start  -->
+          <div class="menu-card">
+            <!-- image-menu start -->
+            <figure class="image-menu">
+              <img src="images/milk1.webp" alt="">
+            </figure>
+            <!-- image-menu end -->
+            <!-- text-image-menu start -->
+            <figcaption class="text-image-menu">
+                <h3>آيس كريم</h3>
+              <input class="plus" type="number" placeholder="  "> <iconify-icon icon="ic:twotone-plus-minus" style="color: #d85285;" width="20"></iconify-icon>
+              <p>5<span>$</span></p>
+              <button class="button">
+                <span>أضافة</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            </figcaption>
+            <!-- text-image-menu end -->
+          </div>
+          <!-- parent of image-menu, text-image-menu, & button end  -->
+          <!-- parent of image-menu, text-image-menu, & button start  -->
+          <div class="menu-card">
+            <!-- image-menu start -->
+            <figure class="image-menu">
+              <img src="images/menu-5.png" alt="image" />
+            </figure>
+            <!-- image-menu end -->
+            <!-- text-image-menu start -->
+            <figcaption class="text-image-menu">
+                <h3>آيس كريم</h3>
+              <input class="plus" type="number" placeholder="  "> <iconify-icon icon="ic:twotone-plus-minus" style="color: #d85285;" width="20"></iconify-icon>
+              <p>5<span>$</span></p>
+              <button class="button">
+                <span>أضافة</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            </figcaption>
+            <!-- text-image-menu end -->
+          </div>
+          <!-- parent of image-menu, text-image-menu, & button end  -->
+          <!-- parent of image-menu, text-image-menu, & button start  -->
+          <div class="menu-card">
+            <!-- image-menu start -->
+            <figure class="image-menu">
+              <img src="images/hot3.jpg" alt="image" />
+            </figure>
+            <!-- image-menu end -->
+            <!-- text-image-menu start -->
+            <figcaption class="text-image-menu">
+                <h3>آيس كريم</h3>
+              <input class="plus" type="number" placeholder="  "> <iconify-icon icon="ic:twotone-plus-minus" style="color: #d85285;" width="20"></iconify-icon>
+              <p>5$<span></span></p>
+              <button class="button">
+                <span>أضافة</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            </figcaption>
+            <!-- text-image-menu end -->
+          </div>
+          <!-- parent of image-menu, text-image-menu, & button end  -->
+          <!-- parent of image-menu, text-image-menu, & button start  -->
+          <div class="menu-card">
+            <!-- image-menu start -->
+            <figure class="image-menu">
+              <img src="images/hot2.jpg" alt="image" />
+            </figure>
+            <!-- image-menu end -->
+            <!-- text-image-menu start -->
+            <figcaption class="text-image-menu">
+                <h3>آيس كريم</h3>
+              <input class="plus" type="number" placeholder="  "> <iconify-icon icon="ic:twotone-plus-minus" style="color: #d85285;" width="20"></iconify-icon>
+              <p>5<span>$</span></p>
+              <button class="button">
+                <span>أضافة</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            </figcaption>
+            <!-- text-image-menu end -->
+          </div>
+          <!-- parent of image-menu, text-image-menu, & button end  -->
+          <!-- parent of image-menu, text-image-menu, & button start  -->
+          <div class="menu-card">
+            <!-- image-menu start -->
+            <figure class="image-menu">
+              <img src="images/menu-6.png" alt="image" />
+            </figure>
+            <!-- image-menu end -->
+            <!-- text-image-menu start -->
+            <figcaption class="text-image-menu">
+                <h3>آيس كريم</h3>
+              <input class="plus" type="number" placeholder="  "> <iconify-icon icon="ic:twotone-plus-minus" style="color: #d85285;" width="20"></iconify-icon>
+              <p>5<span>$</span></p>
+              <button class="button">
+                <span>أضافة</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            </figcaption>
+            <!-- text-image-menu end -->
+          </div>
+          <!-- parent of image-menu, text-image-menu, & button end  -->
+          <!-- parent of image-menu, text-image-menu, & button start  -->
+          <div class="menu-card">
+            <!-- image-menu start -->
+            <figure class="image-menu">
+              <img src="images/hot1.jpg" alt="image" />
+            </figure>
+            <!-- image-menu end -->
+            <!-- text-image-menu start -->
+            <figcaption class="text-image-menu">
+              <h3>آيس كريم</h3>
+              <input class="plus" type="number" placeholder="  "> <iconify-icon icon="ic:twotone-plus-minus" style="color: #d85285;" width="20"></iconify-icon>
+              <p>5<span>$</span></p>
+              <button class="button">
+                <span>أضافة</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            </figcaption>
+            <!-- text-image-menu end -->
+          </div>
+          <!-- parent of image-menu, text-image-menu, & button end  -->
+        </div>
+        <!-- container of menu-card, image-menu, text-image-menu, & button end -->
+      </section>
+      <!-- section menu end -->
+
+    </section>
+    <!-- menu -->
+
+    <!-- gallery -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">معرض الصور</h1>
+
+        <div class="gallery-container">
+
+            <a href="images/gallery1.jpg" class="boximage">
+                <img src="images/gallery1.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+
+            <a href="images/gallery2.jpg" class="boximage">
+                <img src="images/gallery2.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+            <a href="images/hot1.jpg" class="boximage">
+                <img src="images/hot1.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+            <a href="images/gallery3.jpg" class="boximage">
+                <img src="images/gallery3.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+
+            <a href="images/gallery4.jpg" class="boximage">
+                <img src="images/gallery4.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+
+            <a href="images/gallery5.jpg" class="boximage">
+                <img src="images/gallery5.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+
+            <a href="images/menu-3.png" class="boximage">
+                <img src="images/menu-3.png" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+
+            <a href="images/gallery7.jpg" class="boximage">
+                <img src="images/gallery7.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+
+            <a href="images/gallery8.jpg" class="boximage">
+                <img src="images/gallery8.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+            <a href="images/milk2.webp" class="boximage">
+                <img src="images/milk2.webp" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i> </div>
+            </a>
+        </div>
+
+    </section>
+    <!-- gallery -->
+
+    <!-- order -->
+
+    <section class="order" id="order">
+        <h1 class="heading">حجز طاولة</h1>
+        <form action="">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="inputBox">
+                        <span>الأسم</span>
+                        <input type="text" placeholder="أدخل الأسم هنا ">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>رقم الهاتف</span>
+                        <input type="tel" placeholder=" رقم الهاتف">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>عدد الأشخاص</span>
+                        <input type="number" placeholder=" كم عدد الأشخاص">
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="inputBox">
+                        <span>الوقت</span>
+                        <input type="time">
+                    </div>
+                    <div class="inputBox">
+                        <span>التاريخ</span>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <span>ملاحظات</span>
+                        <textarea name="" placeholder="أضافة ملاحظة " cols="30" rows="10"></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+            <input type="submit" value="order now" class="btn">
+        </form>
+
+    </section>
+
+    <!-- order -->
+
+    <!-- footer -->
+
+    <section class="footer" id="contact">
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-map"></i>
+                <h3>العنوان</h3>
+                <p>230 Point of the  <br>
+                    almansour Mall <br>
+                    Bagdad iraq.</p>
+                    <div class="inputBox">
+                        <iframe class="map" style="width: 200px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4914.932059366301!2d67.06422978705596!3d24.96907002303995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340eb31897823%3A0x125deca14e8d41d4!2sMehran%20Ice%20Cream!5e0!3m2!1sen!2s!4v1658145845041!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>رقم الهاتف</h3>
+                <p>+000-000-000</p>
+                <p>+000-000-000</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>الأيميل</h3>
+                <a href="#" class="link">icecream@gmail.com</a>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>ساعات التواجد</h3>
+                <p>monday - friday: 2:00 - 12:00 <br> Saturday: 2:00 - 11:00</p>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="credit">created by <span>team IC </span></div>
+
+    </section>
+
+    <!-- footer -->
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- lightgallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <!-- icons -->
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+
+</body>
+</html>    
